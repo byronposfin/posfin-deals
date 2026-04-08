@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --posfin-teal: #00B5B0;
+  --posfin-navy: #1C184F;
+  --posfin-cream: #F9F6E8;
+}
+
+html, body { background: var(--posfin-cream); color: var(--posfin-navy); }
+
+@keyframes pulse-field {
+  0% { background-color: rgba(0, 181, 176, 0.25); }
+  100% { background-color: transparent; }
+}
+.field-pulse { animation: pulse-field 1.2s ease-out; }
